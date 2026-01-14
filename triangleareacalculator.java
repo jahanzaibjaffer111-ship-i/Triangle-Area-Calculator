@@ -10,7 +10,7 @@ public class triangleareacalculator
         d=thirth length */
         double a,s,b,c,d;
         try (Scanner read = new Scanner(System.in)) {
-            while(1>0)
+            while(true)
             {
                 System.out.println("HELLO");
                 System.out.println("WELCOME TO TRIANGLE AREA CALCULATOR");
@@ -59,4 +59,5 @@ public class triangleareacalculator
             }
         }
     }
+
 }
