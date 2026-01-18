@@ -12,48 +12,66 @@ public class triangleareacalculator
         try (Scanner read = new Scanner(System.in)) {
             while(true)
             {
-                System.out.println("HELLO");
-                System.out.println("WELCOME TO TRIANGLE AREA CALCULATOR");
-                System.out.println("ENTRE FIRST LENGTH OF TRIANGLE");
+                System.out.println("Hello");
+                System.out.println("Welcome to Triangle Area Calculator");
+                System.out.println("Enter First Length of Triangle");
                 b=read.nextDouble();
                 if(b>0)
                 {
-                    System.out.println("ENTRE SECOND LENGTH OF TRIANGLE");
+                    System.out.println("Enter Second Length of Triangle");
                     c=read.nextDouble();
                     if(c>0)
                     {
-                        System.out.println("ENTRE THIRTH LENGTH OF TRIANGLE");
+                        System.out.println("Enter Third Length of Triangle");
                         d=read.nextDouble();
                         if(d>0)
                         {
                             s=(b+c+d)/2;
                             a =Math.sqrt(s*(s-b)*(s-c)*(s-d));
-                            System.out.println("SEMI PERIMETER OF TRIANGLE IS");
+                            System.out.println("Semi Perimeter of Triangle is");
                             System.out.println(s);
-                            System.out.println("AREA OF TRINAGLE IS");
+                            System.out.println("Area of Triangle is");
                             System.out.println(a);
-                            System.out.println("THANKS");
-                            System.out.println("BYE");
+                            System.out.println("Thank you");
+                            System.out.println("Bye");
                             System.out.println(".");
                         }
-                        if(d<0)
+                        else if(d<0)
                         {
-                            System.out.println("LENGHT OF TRIANGLE CANT BE NEGATIVE");
-                            System.out.println("TRY AGAIN");
+                            System.out.println("Length of Triangle can't be negative");
+                            System.out.println("Try again");
+                            System.out.println(".");
+                        }
+                        else if(d==0)
+                        {
+                            System.out.println("Length of Triangle can't be zero");
+                            System.out.println("Try again");
                             System.out.println(".");
                         }
                     }
-                    if(c<0)
+                    else if(c<0)
                     {
-                        System.out.println("LENGHT OF TRIANGLE CANT BE NEGATIVE");
-                        System.out.println("TRY AGAIN");
+                        System.out.println("Length of Triangle can't be negative");
+                        System.out.println("Try again");
+                        System.out.println(".");
+                    }
+                    else if(c==0)
+                    {
+                        System.out.println("Length of Triangle can't be zero");
+                        System.out.println("Try again");
                         System.out.println(".");
                     }
                 }
-                if(b<0)
+                else if(b<0)
                 {
-                    System.out.println("LENGHT OF TRIANGLE CANT BE NEGATIVE");
-                    System.out.println("TRY AGAIN");
+                    System.out.println("Length of Triangle can't be negative");
+                    System.out.println("Try again");
+                    System.out.println(".");
+                }
+                else if(b==0)
+                {
+                    System.out.println("Length of Triangle can't be zero");
+                    System.out.println("Try again");
                     System.out.println(".");
                 }
             }
@@ -61,3 +79,4 @@ public class triangleareacalculator
     }
 
 }
+
